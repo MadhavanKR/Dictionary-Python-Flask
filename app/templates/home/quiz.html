@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form method="POST" action="/quiz">
+<table class="table table-striped">
+{% for key in questionaire.keys() %}
+	<tr>
+	<td> <label> {{ key }} - {{ questionaire[key] }}</label> </td>
+	<td> Yes : <input type=radio id={{ key }} name={{ key }} value="yes" required="required" /> </td>
+	<td> No : <input type=radio id={{ key }} name={{ key }} value="no" required="required" /> </td>
+	</tr>
+{% endfor %}
+</table>
+	<input type="submit" name="submit" value="submit">
+</form>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+	<div class="row" style="padding-left:30px">
+	<div class="col-md-4">
+ 	<table class="table table-bordered">
+ 	
+ 	{% if words %}
+ 		<tr> <th> Your Words </th> </tr>
+ 	{% for word in words %}
+ 		<tr> <td> <button type=button onclick="loadDoc('{{ word.word }}')">{{ word.word }} </button> </td> </tr> 
+ 	{% endfor %}
+	
+ 	{% else %}
+ 		<tr> <th> sorry you dont follow any words yet </th> </tr> 
+ {% endif %}
+  	</table>
+  	</div>
+  	
+  	<div class="row" id="div_meaning">
+  		
+  	</div>
+  	
+  	{% include 'home/_pager.html' %}
+  	
+ 	</div>
+ 
+{% endblock %}

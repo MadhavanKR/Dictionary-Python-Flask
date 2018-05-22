@@ -1,0 +1,12 @@
+<div class="row" style="padding-left:30px; padding-top: 10px">
+	<div class="col-md-4">
+		<table class="table table-bordered">
+		<tr> <th align="center"> Meanings </th> </tr>
+		{% if meanings %}
+		{% for meaning in meanings %}
+			<tr> <td align="center"> {{ meaning[1:meaning.__len__()] }} </td> </tr>
+		{% endfor %}
+		{% endif %}
+		</table>
+	</div>
+</div>

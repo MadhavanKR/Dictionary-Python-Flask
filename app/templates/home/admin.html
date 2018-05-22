@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="table-responsive">
+<table class='table' border=1>
+	<tr> <th> Word </th> <th colspan=1> Actions </th> </tr>
+	{% for word in words %}
+	<tr> <td colspan=1 > {{ word.word }} </td>
+		<td colspan=1> <a href='/admin?delete={{ word.word.strip(".,:; ") }}' >Delete</a> </td>
+	 </tr> 
+	{% endfor %}
+</table>
+</div>
+{% endblock %}

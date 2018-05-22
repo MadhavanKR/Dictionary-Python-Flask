@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block content %}
+
+{{ form.hidden_tag() }}
+
+<div class="row" style="padding-left:30px">
+	<div class="col-md-4">{{ wtf.quick_form(form) }}</div>
+</div>
+
+<div class="row" style="padding-left:30px; padding-top: 10px">
+	<div class="col-md-4">
+		<table class="table table-bordered">
+		{% if meanings %}
+		<tr> <th align="center"> Meanings </th> </tr>
+		{% for meaning in meanings %}
+			<tr> <td align="center"> {{ meaning[1:meaning.__len__()-1] }} </td> </tr>
+		{% endfor %}
+		{% endif %}
+		</table>
+	</div>
+</div>
+{% endblock %}

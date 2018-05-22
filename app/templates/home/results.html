@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<h1> Your score is : {{score}} </h1>
+	<table class="table table-striped" border=1>
+	<tr> <th> word </th> <th> Result </th> </tr>
+	{% for key in result.keys() %}
+		<tr>
+		<td> {{ key }} </td> <td> {{ result[key] }} </td>
+		</tr>
+	{% endfor %}
+	</table>
+{% endblock %} 
