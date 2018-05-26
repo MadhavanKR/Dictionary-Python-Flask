@@ -4,6 +4,8 @@ from app.login.UserForms import LoginForm,RegistrationForm;
 from flask import render_template,flash,url_for,request,redirect;
 from app.models import User;
 from app import db;
+from werkzeug.urls import url_parse
+
 
 
 @bp.route('/login', methods=['GET','POST'])

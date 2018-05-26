@@ -9,7 +9,7 @@ class Config(object):
     
     WORDS_PER_PAGE=3;
     
-    QUIZ_NUM_QUESTIONS = 3;
+    QUIZ_NUM_QUESTIONS = 100;
     
     #Mail server configurations
     MAIL_SERVER = os.environ.get('MAIL_SERVER')

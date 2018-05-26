@@ -1,0 +1,87 @@
+2018-05-26 13:13:44,890 ERROR: Exception on /quiz [GET] [in /Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/m0k00eu/python-projects/dictionary/app/home/routes.py", line 143, in quiz
+    current_app.logger(db.session.query(func.count(Words.id)).scalar());
+NameError: name 'curreny_app' is not defined
+2018-05-26 13:13:48,604 INFO: adding dictionary to session {'action': ":the initiating of a proceeding in a court of justice by which one demands or enforces one's right", 'process': ':something going on :', 'thread': ':a filament, a group of filaments twisted together, or a filamentous length formed by spinning and twisting short textile fibers into a continuous strand', 'friend': ':one attached to another by ', 'party': ':a person or group taking one side of a question, dispute, or contest', 'abc': ':the rudiments of reading, writing, and spelling ', '@#$%': '', 'hello': ':an expression or gesture of greeting ', '!@#$': ''} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
+2018-05-26 13:13:48,604 INFO: venkatesh -- dictionary length : 9 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
+2018-05-26 13:13:48,604 INFO: ['action', 'process', 'thread', 'friend', 'party', 'abc', '@#$%', 'hello', '!@#$'] [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:132]
+2018-05-26 13:13:48,605 ERROR: Exception on /quiz [GET] [in /Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/m0k00eu/python-projects/dictionary/app/home/routes.py", line 143, in quiz
+    current_app.logger(db.session.query(func.count(Words.id)).scalar());
+NameError: name 'curreny_app' is not defined
+2018-05-26 13:14:03,170 INFO: MicroBlog startup [in /Users/m0k00eu/python-projects/dictionary/app/dictionary.py:18]
+2018-05-26 13:14:07,653 INFO: adding dictionary to session {'action': ":the initiating of a proceeding in a court of justice by which one demands or enforces one's right", 'process': ':something going on :', 'thread': ':a filament, a group of filaments twisted together, or a filamentous length formed by spinning and twisting short textile fibers into a continuous strand', 'friend': ':one attached to another by ', 'party': ':a person or group taking one side of a question, dispute, or contest', 'abc': ':the rudiments of reading, writing, and spelling ', '@#$%': '', 'hello': ':an expression or gesture of greeting ', '!@#$': ''} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
+2018-05-26 13:14:07,653 INFO: venkatesh -- dictionary length : 9 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
+2018-05-26 13:14:07,654 INFO: ['action', 'process', 'thread', 'friend', 'party', 'abc', '@#$%', 'hello', '!@#$'] [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:132]
+2018-05-26 13:14:07,655 ERROR: Exception on /quiz [GET] [in /Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/m0k00eu/python-projects/dictionary/app/home/routes.py", line 143, in quiz
+    current_app.logger(db.session.query(func.count(Words.id)).scalar());
+TypeError: 'Logger' object is not callable
+2018-05-26 13:14:09,583 INFO: adding dictionary to session {'action': ":the initiating of a proceeding in a court of justice by which one demands or enforces one's right", 'process': ':something going on :', 'thread': ':a filament, a group of filaments twisted together, or a filamentous length formed by spinning and twisting short textile fibers into a continuous strand', 'friend': ':one attached to another by ', 'party': ':a person or group taking one side of a question, dispute, or contest', 'abc': ':the rudiments of reading, writing, and spelling ', '@#$%': '', 'hello': ':an expression or gesture of greeting ', '!@#$': ''} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
+2018-05-26 13:14:09,583 INFO: venkatesh -- dictionary length : 9 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
+2018-05-26 13:14:09,583 INFO: ['action', 'process', 'thread', 'friend', 'party', 'abc', '@#$%', 'hello', '!@#$'] [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:132]
+2018-05-26 13:14:09,584 ERROR: Exception on /quiz [GET] [in /Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/m0k00eu/python-projects/dictionary/app/home/routes.py", line 143, in quiz
+    current_app.logger(db.session.query(func.count(Words.id)).scalar());
+TypeError: 'Logger' object is not callable
+2018-05-26 13:14:53,595 INFO: MicroBlog startup [in /Users/m0k00eu/python-projects/dictionary/app/dictionary.py:18]

@@ -6,7 +6,7 @@
 	<tr> <th> word </th> <th> Result </th> </tr>
 	{% for key in result.keys() %}
 		<tr>
-		<td> {{ key }} </td> <td> {{ result[key] }} </td>
+		<td> {{ key }} </td> <td> <label> {{ result[key] }} </label> </td>
 		</tr>
 	{% endfor %}
 	</table>

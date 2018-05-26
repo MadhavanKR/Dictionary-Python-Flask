@@ -11,13 +11,21 @@
 
 <div class="row" style="padding-left:30px; padding-top: 10px">
 	<div class="col-md-4">
+		
+		{%if error %}
+		<label style="color:red"> {{ error }} </label> 
+		{% else %}
 		<table class="table table-bordered">
 		{% if meanings %}
 		<tr> <th align="center"> Meanings </th> </tr>
 		{% for meaning in meanings %}
-			<tr> <td align="center"> {{ meaning[1:meaning.__len__()-1] }} </td> </tr>
+			{% if meaning!=":" %}
+			<tr> <td align="center"> {{ meaning }} </td> </tr>
+			{% endif %}
 		{% endfor %}
 		{% endif %}
+		{% endif %}
+		
 		</table>
 	</div>
 </div>

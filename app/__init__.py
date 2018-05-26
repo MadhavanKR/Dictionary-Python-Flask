@@ -1,4 +1,4 @@
-from flask import Flask;
+from flask import Flask,current_app;
 from flask_login import LoginManager;
 from flask_migrate import Migrate  # helps in making schema changes
 from flask_sqlalchemy import SQLAlchemy  # database
@@ -7,6 +7,7 @@ from flask_sqlalchemy import SQLAlchemy  # database
 from app.config import Config; #Configuration class 
 from flask_bootstrap import Bootstrap; #import Bootstrap
 from flask_moment import Moment; #Moment is a timestamp managing libraru
+import logging;
 
 bootstrap = Bootstrap();
 moment = Moment();
@@ -37,5 +38,6 @@ def create_app(config_class=Config):
     app.register_blueprint(home_bp);
     
     return app;
+
 
 from app import models;
