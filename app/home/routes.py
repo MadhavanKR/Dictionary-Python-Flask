@@ -24,11 +24,11 @@ def searchWord():
             meanings = word.meaning.split("~~");
             return render_template('home/index.html',title='Home',form=form,meanings=meanings);
         else:
-            current_app.logger.info(word.word+" is not available in database, querying from merriam webster");
+            current_app.logger.info(form.word.data.lower()+" is not available in database, querying from merriam webster");
             meanings = utils.getWordMeaning(form.word.data.lower().strip(trailingChars));
             if meanings is None:
                 return render_template('home/index.html',title='Home',form=form,error="No Meanings found");
-            current_app.logger.info("adding "+word.word+" to database and to "+current_user.username+" following list");
+            current_app.logger.info("adding "+form.word.data.lower()+" to database and to "+current_user.username+" following list");
             new_word = Words(word=form.word.data.lower().strip(trailingChars),meaning=meanings);
             new_word.users.append(current_user);
             db.session.add(new_word);
@@ -101,6 +101,7 @@ def quiz():
     current_app.logger.info(current_user.username+" -- dictionary length : "+str(len(dictionary)));
     if len(dictionary) < numQuestions:
         numQuestions = len(dictionary);
+        
     if request.method=='POST':
         score = 0;
         questionaire_req = session["questionaire"];

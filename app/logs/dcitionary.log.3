@@ -1,6 +1,4 @@
-2018-05-26 10:26:05,642 INFO: adding dictionary to session {'action': ":the initiating of a proceeding in a court of justice by which one demands or enforces one's right", 'process': ':something going on :', 'thread': ':a filament, a group of filaments twisted together, or a filamentous length formed by spinning and twisting short textile fibers into a continuous strand', 'friend': ':one attached to another by ', 'party': ':a person or group taking one side of a question, dispute, or contest', 'abc': ':the rudiments of reading, writing, and spelling ', '@#$%': '', 'hello': ':an expression or gesture of greeting ', '!@#$': ''} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
-2018-05-26 10:26:05,642 INFO: venkatesh -- dictionary length : 9 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
-2018-05-26 10:26:05,646 ERROR: Exception on /quiz [GET] [in /Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py:1761]
+2018-05-26 13:10:43,842 ERROR: Exception on /quiz [GET] [in /Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -17,35 +15,11 @@ Traceback (most recent call last):
   File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
   File "/Users/m0k00eu/python-projects/dictionary/app/home/routes.py", line 144, in quiz
-    wrongMeaning = Words.query.get(int(wrongMeaningId));
-KeyError: 'scuttle'
-2018-05-26 13:07:05,315 INFO: adding dictionary to session {'action': ":the initiating of a proceeding in a court of justice by which one demands or enforces one's right", 'process': ':something going on :', 'thread': ':a filament, a group of filaments twisted together, or a filamentous length formed by spinning and twisting short textile fibers into a continuous strand', 'friend': ':one attached to another by ', 'party': ':a person or group taking one side of a question, dispute, or contest', 'abc': ':the rudiments of reading, writing, and spelling ', '@#$%': '', 'hello': ':an expression or gesture of greeting ', '!@#$': ''} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
-2018-05-26 13:07:05,315 INFO: venkatesh -- dictionary length : 9 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
-2018-05-26 13:07:05,316 INFO: Adding questionaire to session {'friend': ':one attached to another by ', 'hello': ':an expression or gesture of greeting ', 'process': ':something going on :'} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:147]
-2018-05-26 13:07:06,690 INFO: adding dictionary to session {'action': ":the initiating of a proceeding in a court of justice by which one demands or enforces one's right", 'process': ':something going on :', 'thread': ':a filament, a group of filaments twisted together, or a filamentous length formed by spinning and twisting short textile fibers into a continuous strand', 'friend': ':one attached to another by ', 'party': ':a person or group taking one side of a question, dispute, or contest', 'abc': ':the rudiments of reading, writing, and spelling ', '@#$%': '', 'hello': ':an expression or gesture of greeting ', '!@#$': ''} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
-2018-05-26 13:07:06,691 INFO: venkatesh -- dictionary length : 9 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
-2018-05-26 13:07:06,694 ERROR: Exception on /quiz [GET] [in /Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/Users/m0k00eu/python-projects/dictionary/app/home/routes.py", line 144, in quiz
-    wrongMeaning = Words.query.get(int(wrongMeaningId));
+    current_app.logger("wrongMeaningId="+wrongMeaningId);
 KeyError: 'live'
-2018-05-26 13:09:18,361 INFO: adding dictionary to session {'action': ":the initiating of a proceeding in a court of justice by which one demands or enforces one's right", 'process': ':something going on :', 'thread': ':a filament, a group of filaments twisted together, or a filamentous length formed by spinning and twisting short textile fibers into a continuous strand', 'friend': ':one attached to another by ', 'party': ':a person or group taking one side of a question, dispute, or contest', 'abc': ':the rudiments of reading, writing, and spelling ', '@#$%': '', 'hello': ':an expression or gesture of greeting ', '!@#$': ''} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
-2018-05-26 13:09:18,361 INFO: venkatesh -- dictionary length : 9 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
-2018-05-26 13:09:18,366 ERROR: Exception on /quiz [GET] [in /Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py:1761]
+2018-05-26 13:11:29,670 INFO: adding dictionary to session {'action': ":the initiating of a proceeding in a court of justice by which one demands or enforces one's right", 'process': ':something going on :', 'thread': ':a filament, a group of filaments twisted together, or a filamentous length formed by spinning and twisting short textile fibers into a continuous strand', 'friend': ':one attached to another by ', 'party': ':a person or group taking one side of a question, dispute, or contest', 'abc': ':the rudiments of reading, writing, and spelling ', '@#$%': '', 'hello': ':an expression or gesture of greeting ', '!@#$': ''} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
+2018-05-26 13:11:29,670 INFO: venkatesh -- dictionary length : 9 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
+2018-05-26 13:11:29,674 ERROR: Exception on /quiz [GET] [in /Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -62,7 +36,52 @@ Traceback (most recent call last):
   File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
   File "/Users/m0k00eu/python-projects/dictionary/app/home/routes.py", line 144, in quiz
-    wrongMeaning = Words.query.get(int(wrongMeaningId));
-KeyError: 'consent'
-2018-05-26 13:10:43,838 INFO: adding dictionary to session {'action': ":the initiating of a proceeding in a court of justice by which one demands or enforces one's right", 'process': ':something going on :', 'thread': ':a filament, a group of filaments twisted together, or a filamentous length formed by spinning and twisting short textile fibers into a continuous strand', 'friend': ':one attached to another by ', 'party': ':a person or group taking one side of a question, dispute, or contest', 'abc': ':the rudiments of reading, writing, and spelling ', '@#$%': '', 'hello': ':an expression or gesture of greeting ', '!@#$': ''} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
-2018-05-26 13:10:43,839 INFO: venkatesh -- dictionary length : 9 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
+    current_app.logger("wrongMeaningId="+wrongMeaningId);
+KeyError: 'imagination'
+2018-05-26 13:12:30,238 INFO: adding dictionary to session {'action': ":the initiating of a proceeding in a court of justice by which one demands or enforces one's right", 'process': ':something going on :', 'thread': ':a filament, a group of filaments twisted together, or a filamentous length formed by spinning and twisting short textile fibers into a continuous strand', 'friend': ':one attached to another by ', 'party': ':a person or group taking one side of a question, dispute, or contest', 'abc': ':the rudiments of reading, writing, and spelling ', '@#$%': '', 'hello': ':an expression or gesture of greeting ', '!@#$': ''} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
+2018-05-26 13:12:30,239 INFO: venkatesh -- dictionary length : 9 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
+2018-05-26 13:12:30,241 ERROR: Exception on /quiz [GET] [in /Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/m0k00eu/python-projects/dictionary/app/home/routes.py", line 144, in quiz
+    wrongMeaningId = (random.randint(1,10000) % int(db.session.query(func.count(Words.id)).scalar()));
+KeyError: 'live'
+2018-05-26 13:13:14,834 INFO: MicroBlog startup [in /Users/m0k00eu/python-projects/dictionary/app/dictionary.py:18]
+2018-05-26 13:13:21,657 INFO: adding dictionary to session {'action': ":the initiating of a proceeding in a court of justice by which one demands or enforces one's right", 'process': ':something going on :', 'thread': ':a filament, a group of filaments twisted together, or a filamentous length formed by spinning and twisting short textile fibers into a continuous strand', 'friend': ':one attached to another by ', 'party': ':a person or group taking one side of a question, dispute, or contest', 'abc': ':the rudiments of reading, writing, and spelling ', '@#$%': '', 'hello': ':an expression or gesture of greeting ', '!@#$': ''} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
+2018-05-26 13:13:21,658 INFO: venkatesh -- dictionary length : 9 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
+2018-05-26 13:13:21,658 INFO: ['action', 'process', 'thread', 'friend', 'party', 'abc', '@#$%', 'hello', '!@#$'] [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:132]
+2018-05-26 13:13:21,658 ERROR: Exception on /quiz [GET] [in /Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py:1761]
+Traceback (most recent call last):
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/m0k00eu/python-projects/dictionary/app/home/routes.py", line 143, in quiz
+    curreny_app.logger(db.session.query(func.count(Words.id)).scalar());
+NameError: name 'curreny_app' is not defined
+2018-05-26 13:13:44,889 INFO: adding dictionary to session {'action': ":the initiating of a proceeding in a court of justice by which one demands or enforces one's right", 'process': ':something going on :', 'thread': ':a filament, a group of filaments twisted together, or a filamentous length formed by spinning and twisting short textile fibers into a continuous strand', 'friend': ':one attached to another by ', 'party': ':a person or group taking one side of a question, dispute, or contest', 'abc': ':the rudiments of reading, writing, and spelling ', '@#$%': '', 'hello': ':an expression or gesture of greeting ', '!@#$': ''} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
+2018-05-26 13:13:44,889 INFO: venkatesh -- dictionary length : 9 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
+2018-05-26 13:13:44,890 INFO: ['action', 'process', 'thread', 'friend', 'party', 'abc', '@#$%', 'hello', '!@#$'] [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:132]

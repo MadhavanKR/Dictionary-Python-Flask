@@ -1,7 +1,4 @@
-2018-05-26 13:14:56,863 INFO: adding dictionary to session {'action': ":the initiating of a proceeding in a court of justice by which one demands or enforces one's right", 'process': ':something going on :', 'thread': ':a filament, a group of filaments twisted together, or a filamentous length formed by spinning and twisting short textile fibers into a continuous strand', 'friend': ':one attached to another by ', 'party': ':a person or group taking one side of a question, dispute, or contest', 'abc': ':the rudiments of reading, writing, and spelling ', '@#$%': '', 'hello': ':an expression or gesture of greeting ', '!@#$': ''} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
-2018-05-26 13:14:56,864 INFO: venkatesh -- dictionary length : 9 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
-2018-05-26 13:14:56,864 INFO: ['action', 'process', 'thread', 'friend', 'party', 'abc', '@#$%', 'hello', '!@#$'] [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:132]
-2018-05-26 13:14:56,866 ERROR: Exception on /quiz [GET] [in /Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py:1761]
+2018-05-31 12:45:56,244 ERROR: Exception on /index [POST] [in /Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py:1761]
 Traceback (most recent call last):
   File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
     response = self.full_dispatch_request()
@@ -17,52 +14,49 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "/Users/m0k00eu/python-projects/dictionary/app/home/routes.py", line 143, in quiz
-    current_app.logger(db.session.query(func.count(Words.id)).scalar());
-TypeError: 'Logger' object is not callable
-2018-05-26 13:15:45,890 INFO: adding dictionary to session {'action': ":the initiating of a proceeding in a court of justice by which one demands or enforces one's right", 'process': ':something going on :', 'thread': ':a filament, a group of filaments twisted together, or a filamentous length formed by spinning and twisting short textile fibers into a continuous strand', 'friend': ':one attached to another by ', 'party': ':a person or group taking one side of a question, dispute, or contest', 'abc': ':the rudiments of reading, writing, and spelling ', '@#$%': '', 'hello': ':an expression or gesture of greeting ', '!@#$': ''} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
-2018-05-26 13:15:45,891 INFO: venkatesh -- dictionary length : 9 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
-2018-05-26 13:15:45,891 INFO: ['action', 'process', 'thread', 'friend', 'party', 'abc', '@#$%', 'hello', '!@#$'] [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:132]
-2018-05-26 13:15:45,893 ERROR: Exception on /quiz [GET] [in /Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/Users/m0k00eu/python-projects/dictionary/app/home/routes.py", line 143, in quiz
-    current_app.logger.info(db.session.query(func.count(Words.id)).scalar());
-TypeError: 'Logger' object is not callable
-2018-05-26 13:15:57,262 INFO: MicroBlog startup [in /Users/m0k00eu/python-projects/dictionary/app/dictionary.py:18]
-2018-05-26 13:16:25,655 INFO: adding dictionary to session {'action': ":the initiating of a proceeding in a court of justice by which one demands or enforces one's right", 'process': ':something going on :', 'thread': ':a filament, a group of filaments twisted together, or a filamentous length formed by spinning and twisting short textile fibers into a continuous strand', 'friend': ':one attached to another by ', 'party': ':a person or group taking one side of a question, dispute, or contest', 'abc': ':the rudiments of reading, writing, and spelling ', '@#$%': '', 'hello': ':an expression or gesture of greeting ', '!@#$': ''} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
-2018-05-26 13:16:25,655 INFO: venkatesh -- dictionary length : 9 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
-2018-05-26 13:16:25,656 INFO: ['action', 'process', 'thread', 'friend', 'party', 'abc', '@#$%', 'hello', '!@#$'] [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:132]
-2018-05-26 13:16:25,657 INFO: 21 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:143]
-2018-05-26 13:16:25,658 ERROR: Exception on /quiz [GET] [in /Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py:1761]
-Traceback (most recent call last):
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
-    raise value
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/m0k00eu/python-projects/dictionary/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "/Users/m0k00eu/python-projects/dictionary/app/home/routes.py", line 145, in quiz
-    current_app.logger.info("wrongMeaningId="+wrongMeaningId);
-TypeError: must be str, not int
+  File "/Users/m0k00eu/python-projects/dictionary/app/home/routes.py", line 27, in searchWord
+    current_app.logger.info(word.word+" is not available in database, querying from merriam webster");
+AttributeError: 'NoneType' object has no attribute 'word'
+2018-05-31 12:46:07,427 INFO: got query for dissent [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:40]
+2018-05-31 12:46:08,474 INFO: got query for hello [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:40]
+2018-05-31 12:46:09,094 INFO: got query for consent [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:40]
+2018-05-31 12:46:21,897 INFO: adding dictionary to session {'dissent': ':to withhold assent', 'hello': ':an expression or gesture of greeting ', 'consent': ':to give assent or approval :', 'coincide': ':to occupy the same place in space or time', 'meagre': ':having little flesh :', 'blandishment': ':something that tends to coax or cajole :', 'imagination': ':the act or power of forming a mental ', 'malice': ':desire to cause pain, injury, or ', 'live': ':to be alive :have the life of an animal or plant', 'help': ':to give assistance or support to ', 'hop': ':to move by a quick springy leap or in a series of leaps', 'leap': ':to spring free from or as if from the ground :', 'river': ':a natural stream of water of usually considerable volume'} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
+2018-05-31 12:46:21,898 INFO: Mad_D -- dictionary length : 13 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
+2018-05-31 12:46:21,899 INFO: ['dissent', 'hello', 'consent', 'coincide', 'meagre', 'blandishment', 'imagination', 'malice', 'live', 'help', 'hop', 'leap', 'river'] [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:136]
+2018-05-31 12:46:21,900 INFO: 21 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:149]
+2018-05-31 12:46:21,901 INFO: wrongMeaningId=8 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:151]
+2018-05-31 12:46:21,902 INFO: wrongMeaning word:coincide [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:153]
+2018-05-31 12:46:21,903 INFO: 21 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:149]
+2018-05-31 12:46:21,904 INFO: wrongMeaningId=17 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:151]
+2018-05-31 12:46:21,905 INFO: wrongMeaning word:imagination [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:153]
+2018-05-31 12:46:21,906 INFO: 21 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:149]
+2018-05-31 12:46:21,906 INFO: wrongMeaningId=4 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:151]
+2018-05-31 12:46:21,907 INFO: wrongMeaning word:dissent [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:153]
+2018-05-31 12:46:21,908 INFO: 21 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:149]
+2018-05-31 12:46:21,909 INFO: wrongMeaningId=19 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:151]
+2018-05-31 12:46:21,909 INFO: wrongMeaning word:live [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:153]
+2018-05-31 12:46:21,910 INFO: 21 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:149]
+2018-05-31 12:46:21,911 INFO: wrongMeaningId=20 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:151]
+2018-05-31 12:46:21,912 INFO: 21 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:149]
+2018-05-31 12:46:21,913 INFO: wrongMeaningId=16 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:151]
+2018-05-31 12:46:21,915 INFO: 21 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:149]
+2018-05-31 12:46:21,915 INFO: wrongMeaningId=12 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:151]
+2018-05-31 12:46:21,917 INFO: 21 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:149]
+2018-05-31 12:46:21,917 INFO: wrongMeaningId=7 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:151]
+2018-05-31 12:46:21,919 INFO: 21 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:149]
+2018-05-31 12:46:21,919 INFO: wrongMeaningId=10 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:151]
+2018-05-31 12:46:21,920 INFO: wrongMeaning word:blandishment [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:153]
+2018-05-31 12:46:21,921 INFO: 21 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:149]
+2018-05-31 12:46:21,921 INFO: wrongMeaningId=8 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:151]
+2018-05-31 12:46:21,922 INFO: wrongMeaning word:coincide [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:153]
+2018-05-31 12:46:21,923 INFO: 21 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:149]
+2018-05-31 12:46:21,924 INFO: wrongMeaningId=1 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:151]
+2018-05-31 12:46:21,925 INFO: 21 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:149]
+2018-05-31 12:46:21,926 INFO: wrongMeaningId=4 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:151]
+2018-05-31 12:46:21,927 INFO: wrongMeaning word:dissent [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:153]
+2018-05-31 12:46:21,927 INFO: Adding questionaire to session {'live': ':to occupy the same place in space or time', 'consent': ':to give assent or approval :', 'hello': ':the act or power of forming a mental ', 'coincide': ':to withhold assent', 'hop': ':to move by a quick springy leap or in a series of leaps', 'imagination': ':to be alive :have the life of an animal or plant', 'river': ':something that tends to coax or cajole :', 'malice': ':desire to cause pain, injury, or ', 'help': ':to occupy the same place in space or time', 'meagre': ':to withhold assent', 'leap': ':to spring free from or as if from the ground :', 'blandishment': ':something that tends to coax or cajole :', 'dissent': ':to withhold assent'} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:157]
+2018-05-31 12:46:37,907 INFO: adding dictionary to session {'dissent': ':to withhold assent', 'hello': ':an expression or gesture of greeting ', 'consent': ':to give assent or approval :', 'coincide': ':to occupy the same place in space or time', 'meagre': ':having little flesh :', 'blandishment': ':something that tends to coax or cajole :', 'imagination': ':the act or power of forming a mental ', 'malice': ':desire to cause pain, injury, or ', 'live': ':to be alive :have the life of an animal or plant', 'help': ':to give assistance or support to ', 'hop': ':to move by a quick springy leap or in a series of leaps', 'leap': ':to spring free from or as if from the ground :', 'river': ':a natural stream of water of usually considerable volume'} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:100]
+2018-05-31 12:46:37,907 INFO: Mad_D -- dictionary length : 13 [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:101]
+2018-05-31 12:46:37,908 INFO: retreived questionaire from session {'blandishment': ':something that tends to coax or cajole :', 'coincide': ':to withhold assent', 'consent': ':to give assent or approval :', 'dissent': ':to withhold assent', 'hello': ':the act or power of forming a mental ', 'help': ':to occupy the same place in space or time', 'hop': ':to move by a quick springy leap or in a series of leaps', 'imagination': ':to be alive :have the life of an animal or plant', 'leap': ':to spring free from or as if from the ground :', 'live': ':to occupy the same place in space or time', 'malice': ':desire to cause pain, injury, or ', 'meagre': ':to withhold assent', 'river': ':something that tends to coax or cajole :'} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:109]
+2018-05-31 12:46:37,908 INFO: retreived dictionary from session {'dissent': ':to withhold assent', 'hello': ':an expression or gesture of greeting ', 'consent': ':to give assent or approval :', 'coincide': ':to occupy the same place in space or time', 'meagre': ':having little flesh :', 'blandishment': ':something that tends to coax or cajole :', 'imagination': ':the act or power of forming a mental ', 'malice': ':desire to cause pain, injury, or ', 'live': ':to be alive :have the life of an animal or plant', 'help': ':to give assistance or support to ', 'hop': ':to move by a quick springy leap or in a series of leaps', 'leap': ':to spring free from or as if from the ground :', 'river': ':a natural stream of water of usually considerable volume'} [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:110]
+2018-05-31 12:46:37,908 INFO: popping questionaire and dictionary from session  [in /Users/m0k00eu/python-projects/dictionary/app/home/routes.py:115]
